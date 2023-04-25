@@ -1,0 +1,27 @@
+.footer {
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/din.jpg");
+  text-shadow: 2px 2px 0 black;
+  color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer > h2 {
+  line-height: 0%;
+}
+
+.numbar-call {
+  line-height: 0%;
+  color: burlywood;
+}
+
+.social-logos > a > img {
+  margin: 0 0.6rem;
+  height: 2rem;
+  width: 2rem;
+}

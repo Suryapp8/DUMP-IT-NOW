@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Nav.css";
-import dustbin from "../images/dustbin.png";
-import din from "../images/din.jpg";
+import logo from "../images/logo.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -10,24 +10,34 @@ function Navbar() {
         <nav className="navbar">
               
           <div className="logo">
-            <img src={dustbin} alt="din" />
+            <Link to="/">
+              <img className="logo-app" src={logo} alt="din" />
+            </Link>
           </div>
               
           <ul className="nav-links">
                   
             <input type="checkbox" id="checkbox_toggle" />
                   
-            <label for="checkbox_toggle" className="hamburger">
+            <label htmlFor="checkbox_toggle" className="hamburger">
               &#9776;
             </label>
                   
             <div className="menu">
                       
-              <li>Our mission and vision</li>
-              <li>Services</li>
-              <li>Contact Us</li>
-              <li>About us</li>
-              <li className="last-line">For a lifelong relationship</li>
+              <li>
+                <Link className="links" to="/mission">
+                  Our mission and Vision
+                </Link>
+              </li>
+              <li>
+                <Link className="links" to="/mission">
+                  Services
+                </Link>
+              </li>
+              <li className="links">Contact Us</li>
+              <li className="links">About us</li>
+              <li className="last-line links">For a lifelong relationship</li>
                     
             </div>
                 

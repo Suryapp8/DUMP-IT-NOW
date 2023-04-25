@@ -1,0 +1,224 @@
+.home-container {
+  margin: 0;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/world.jpg");
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.transbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 40vh;
+  border: 1px solid black;
+  background-color: #ffffff;
+  opacity: 0.65;
+}
+.transbox > h2 {
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+  font-size: 2.5rem;
+}
+
+.transbox > p {
+  text-align: center;
+  font-weight: bold;
+  color: #070000;
+  font-size: 1.5rem;
+}
+
+.transbox > button {
+  margin-top: 2rem;
+  text-transform: capitalize;
+  font-family: "Bruno Ace SC", cursi;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+
+.transbox > button:hover {
+  cursor: pointer;
+  font-size: 2.1rem;
+  transition: 0.2s ease-in-out;
+  padding: 0%;
+}
+
+.get-plant {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50vh;
+  background-color: rgb(61, 146, 4);
+  background-blend-mode: hard-light;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/plant.jpg");
+}
+
+.or {
+  text-align: center;
+  margin: 0;
+  border: 1px solid hsla(0, 100%, 50%, 0.3);
+  color: blanchedalmond;
+  font-weight: bolder;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/din.jpg");
+  text-shadow: 2px 2px 0 black;
+}
+
+.plant-about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 40vh;
+  border: 1px solid black;
+  background-color: #ffffff;
+  opacity: 0.65;
+  margin-right: 2rem;
+}
+
+.plant-about p {
+  text-align: center;
+  font-weight: bold;
+  color: #070000;
+  font-size: 1.5rem;
+}
+
+.plant-about > button {
+  margin-top: 2rem;
+  text-transform: capitalize;
+  font-family: "Bruno Ace SC", cursi;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+
+.all-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all-icons > img {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 2rem;
+}
+.last-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+}
+
+.last-about > img {
+  width: 100%;
+  height: 50vh;
+  opacity: 0.6;
+}
+
+.container-last-about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+
+  opacity: 1;
+  color: #070000;
+}
+
+.container-last-about > h2 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.container-last-about > h3 {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.container-last-about > p {
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+.redo {
+  height: 3rem;
+  width: 3rem;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    height: 45vh;
+  }
+  .transbox {
+    height: 30vh;
+  }
+  .transbox > h2 {
+    font-size: 1rem;
+  }
+
+  .transbox > p {
+    font-size: 0.9rem;
+  }
+
+  .get-plant {
+    height: 40vh;
+  }
+
+  .transbox > button {
+    margin: 0.6rem 1rem;
+    font-size: 1.2rem;
+  }
+  .plant-about {
+    height: 30vh;
+  }
+  .plant-about p {
+    font-size: 0.7rem;
+  }
+
+  .all-icons > img {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .plant-about > button {
+    font-size: 1rem;
+  }
+
+  .transbox > button:hover {
+    font-size: 1.3rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  .plant-about > button:hover {
+    font-size: 1.1rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  .or {
+    font-size: 0.5rem;
+  }
+
+  .container-last-about > h2 {
+    font-size: 0.9rem;
+  }
+
+  .container-last-about > h3 {
+    font-size: 0.7rem;
+  }
+
+  .container-last-about > p {
+    font-size: 0.5rem;
+  }
+}

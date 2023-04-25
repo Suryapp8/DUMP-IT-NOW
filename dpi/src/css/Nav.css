@@ -3,35 +3,26 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem;
-  color: tomato;
-  width: 100%;
+  color: blanchedalmond;
   height: 3rem;
   background-size: cover;
   background-position: center;
-  background-color: #a74800;
-  background-blend-mode: darken;
   background-image: url("../images/din.jpg");
   text-shadow: 2px 2px 0 black;
 }
 
-.logo > img {
-  height: 2rem;
-  width: 2rem;
+.logo-app {
+  height: 4rem;
+  width: 6.5rem;
 }
 
-.logo > img:hover {
-  cursor: pointer;
-  height: 2.3rem;
-  width: 2.3rem;
+.links {
+  color: blanchedalmond;
+}
+
+.logo-app:hover {
   transition: 0.3s ease-in-out;
-}
-
-.nav-links a {
-  color: green;
-  border: 1px solid grey;
-}
-.logo {
-  width: 5rem;
+  cursor: pointer;
 }
 
 .menu {
@@ -39,13 +30,13 @@
   font-size: 1.1rem;
 }
 
-.menu li:hover {
-  color: aqua;
+.links:hover {
+  color: skyblue;
   cursor: pointer;
 }
 
 .menu li {
-  margin-left: 2rem;
+  padding-left: 1.5rem;
 }
 
 input[type="checkbox"] {
@@ -68,20 +59,20 @@ input[type="checkbox"] {
     padding: 1rem 0;
     background-size: cover;
     background-position: center;
-    background-color: #a74800;
-    background-blend-mode: darken;
     background-image: url("../images/din.jpg");
     z-index: 3;
   }
 
-  .menu li:hover {
-    display: inline-block;
+  .links {
+    display: block;
     transition: 0.3s ease;
-    color: aqua;
+    color: blanchedalmond;
+    margin-top: 0.8rem;
   }
 
-  .menu li + li {
-    margin-top: 0.8rem;
+  .links:hover {
+    color: skyblue;
+    cursor: pointer;
   }
 
   input[type="checkbox"]:checked ~ .menu {
@@ -90,11 +81,5 @@ input[type="checkbox"] {
 
   .hamburger {
     display: block;
-  }
-
-  .dropdown {
-    left: 50%;
-    top: 1.9rem;
-    transform: translate(35%);
   }
 }

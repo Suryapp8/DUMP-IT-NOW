@@ -1,0 +1,100 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  color: tomato;
+  width: 100%;
+  height: 3rem;
+  background-size: cover;
+  background-position: center;
+  background-color: #a74800;
+  background-blend-mode: darken;
+  background-image: url("../images/din.jpg");
+  text-shadow: 2px 2px 0 black;
+}
+
+.logo > img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.logo > img:hover {
+  cursor: pointer;
+  height: 2.3rem;
+  width: 2.3rem;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a {
+  color: green;
+  border: 1px solid grey;
+}
+.logo {
+  width: 5rem;
+}
+
+.menu {
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.menu li:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.menu li {
+  margin-left: 2rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 1rem 0;
+    background-size: cover;
+    background-position: center;
+    background-color: #a74800;
+    background-blend-mode: darken;
+    background-image: url("../images/din.jpg");
+    z-index: 3;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+    color: aqua;
+  }
+
+  .menu li + li {
+    margin-top: 0.8rem;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 1.9rem;
+    transform: translate(35%);
+  }
+}

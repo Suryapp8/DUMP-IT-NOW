@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "../css/OrderPage.css";
 import { firestore } from "../firebase/firebase.js";
 import { addDoc, collection } from "@firebase/firestore";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function OrderPage() {
+  const navigate = useNavigate();
   const [user, setUser] = useState();
   const [email, setEmail] = useState();
   const [phone, setPhone] = useState();
@@ -27,9 +28,11 @@ function OrderPage() {
 
     try {
       addDoc(ref, data);
+      alert("Congratulations! Your pick up has been scheduled.");
     } catch (err) {
       console.log(err);
     }
+    navigate("/");
   }
 
   const handleName = (e) => {
@@ -116,7 +119,7 @@ function OrderPage() {
           />
         </div>
         <div className="button-div">
-          <Link to="scheduled"><button className="schedule">Schedule pickup</button></Link>
+          <button className="schedule">Schedule pickup</button>
         </div>
       </form>
     </div>

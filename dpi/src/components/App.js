@@ -8,7 +8,6 @@ import Loading from "./Loading";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import OrderPage from "./OrderPage";
 import PlantPage from "./PlantPage";
-import Congrats from "./Congrats";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,7 +25,6 @@ function App() {
             <Route exact path="Mission" element={<Mission />} />
             <Route exact path="bookslot" element={<OrderPage />} />
             <Route exact path="plants" element={<PlantPage />} />
-            <Route exact path="bookslot/scheduled" element={<Congrats />} />
           </Routes>
           <Footer />
         </BrowserRouter>

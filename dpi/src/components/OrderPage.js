@@ -3,10 +3,8 @@ import "../css/OrderPage.css";
 import { firestore } from "../firebase/firebase.js";
 import { addDoc, collection } from "@firebase/firestore";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 function OrderPage() {
-  const navigate = useNavigate();
   const [user, setUser] = useState();
   const [email, setEmail] = useState();
   const [phone, setPhone] = useState();
@@ -32,7 +30,6 @@ function OrderPage() {
     } catch (err) {
       console.log(err);
     }
-    navigate("/");
   }
 
   const handleName = (e) => {
@@ -119,7 +116,7 @@ function OrderPage() {
           />
         </div>
         <div className="button-div">
-          <button className="schedule">Schedule pickup</button>
+          <Link to="scheduled"><button className="schedule">Schedule pickup</button></Link>
         </div>
       </form>
     </div>

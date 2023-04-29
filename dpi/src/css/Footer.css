@@ -1,5 +1,5 @@
 .footer {
-  height: 20vh;
+  height: 15vh;
   background-size: cover;
   background-position: center;
   background-image: url("../images/din.jpg");
@@ -22,6 +22,6 @@
 
 .social-logos > a > img {
   margin: 0 0.6rem;
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }

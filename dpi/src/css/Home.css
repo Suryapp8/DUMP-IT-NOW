@@ -34,7 +34,7 @@
   font-size: 1.5rem;
 }
 
-.transbox > button {
+.bookslot {
   margin-top: 2rem;
   text-transform: capitalize;
   font-family: "Bruno Ace SC", cursi;
@@ -42,11 +42,11 @@
   border-radius: 0.5rem;
 }
 
-.transbox > button:hover {
+.bookslot:hover {
   cursor: pointer;
-  font-size: 2.1rem;
+  background-color: green;
+  color: blanchedalmond;
   transition: 0.2s ease-in-out;
-  padding: 0%;
 }
 
 .get-plant {
@@ -93,12 +93,18 @@
   font-size: 1.5rem;
 }
 
-.plant-about > button {
-  margin-top: 2rem;
+.plants-btn {
   text-transform: capitalize;
   font-family: "Bruno Ace SC", cursi;
   font-size: 2rem;
   border-radius: 0.5rem;
+}
+
+.plants-btn:hover {
+  cursor: pointer;
+  background-color: green;
+  color: blanchedalmond;
+  transition: 0.2s ease-in;
 }
 
 .all-icons {
@@ -108,9 +114,9 @@
 }
 
 .all-icons > img {
-  height: 2rem;
-  width: 2rem;
-  margin-right: 2rem;
+  height: 4rem;
+  width: 4rem;
+  margin-right: 0.2rem;
 }
 .last-about {
   display: flex;
@@ -175,7 +181,7 @@
     height: 40vh;
   }
 
-  .transbox > button {
+  .bookslot {
     margin: 0.6rem 1rem;
     font-size: 1.2rem;
   }
@@ -187,22 +193,24 @@
   }
 
   .all-icons > img {
-    height: 1rem;
-    width: 1rem;
-    margin-right: 0.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.2rem;
   }
 
-  .plant-about > button {
+  .plants-btn {
     font-size: 1rem;
   }
 
   .transbox > button:hover {
-    font-size: 1.3rem;
+    background-color: green;
+    color: blanchedalmond;
     transition: 0.2s ease-in-out;
   }
 
-  .plant-about > button:hover {
-    font-size: 1.1rem;
+  .plants-btn:hover {
+    background-color: green;
+    color: blanchedalmond;
     transition: 0.2s ease-in-out;
   }
 

@@ -20,11 +20,11 @@ function Footer() {
         </a>
       </div>
 
-      <a href="tel:8604837789">
-        <p className="numbar-call">+8604837789</p>
+      <a href="tel:7007614801">
+        <p className="numbar-call">Call at +91-7007614801</p>
       </a>
-      <a href="mailto:dumpitmow@gmail.com">
-        <p className="numbar-call">dumpitmow@gmail.com</p>
+      <a href="mailto:support@dumpitnow.in">
+        <p className="numbar-call">support@dumpitnow.in</p>
       </a>
     </div>
   );

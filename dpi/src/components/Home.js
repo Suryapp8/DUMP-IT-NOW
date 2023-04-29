@@ -6,6 +6,7 @@ import plant from "../images/plant.png";
 import arrow from "../images/arrow.png";
 import redo from "../images/redo.png";
 import earth from "../images/earth.jpg";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -14,9 +15,11 @@ function Home() {
         <div className="transbox ">
           <h2>Stay Clean Go Green</h2>
           <p>Do you have waste Around you?</p>
-          <button>Dump it now</button>
+          <Link to="/bookslot">
+            <button className="bookslot">Dump it now</button>
+          </Link>
 
-          <p>and become a recycling hero</p>
+          <p> become a recycling hero</p>
         </div>
       </div>
       <div className="or">
@@ -28,6 +31,7 @@ function Home() {
             Dont's throw your scrap on our lands instead give it to us and get
             plants for your recycling efforts
           </p>
+          <Link to="/plants" ><button className="plants-btn">Get plants</button></Link>
           <div className="all-icons">
             <img src={dustbin} alt="icons" />
             <img src={arrow} alt="icons" />
@@ -35,8 +39,6 @@ function Home() {
             <img src={arrow} alt="icons" />
             <img src={plant} alt="icons" />
           </div>
-
-          <button>Get plants</button>
         </div>
       </div>
 
@@ -51,22 +53,22 @@ function Home() {
             start collecting
           </h2>
           <h3>Be a part of our green earth mission</h3>
-          <p>Becoma a part of of 0% plastic emission mission - try to give us 
-            every piece of plastic which comes to your house, make sure every piece of 
-            plasticis recycled and give contribution to control
+          <p>
+            Becoma a part of of 0% plastic emission mission - try to give us
+            every piece of plastic which comes to your house, make sure every
+            piece of plasticis recycled and give contribution to control
             <ul>
-            <li>Soil pollution</li>
-            <li>air pollution</li>
-            <li>water pollution</li>
+              <li>Soil pollution</li>
+              <li>air pollution</li>
+              <li>water pollution</li>
             </ul>
-            as per reports, india generates around 3.4 million tonnes of plastic waste 
-            and barely 30% of its recycled.
-             and to add to it not only plastic usage is increasing exponentially the recycling
-             process is declining heavily.
-             <br/>
-             We urge you to join us and turn this cycle up-side down, welcoming you all recycling
-             heroesto do your parts
-            
+            as per reports, india generates around 3.4 million tonnes of plastic
+            waste and barely 30% of its recycled. and to add to it not only
+            plastic usage is increasing exponentially the recycling process is
+            declining heavily.
+            <br />
+            We urge you to join us and turn this cycle up-side down, welcoming
+            you all recycling heroesto do your parts
           </p>
         </div>
       </div>

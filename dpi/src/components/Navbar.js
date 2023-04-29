@@ -35,7 +35,6 @@ function Navbar() {
                   Services
                 </Link>
               </li>
-              <li className="links">Contact Us</li>
               <li className="links">About us</li>
               <li className="last-line links">For a lifelong relationship</li>
                     

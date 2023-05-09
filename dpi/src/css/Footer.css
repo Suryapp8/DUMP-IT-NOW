@@ -1,5 +1,5 @@
 .footer {
-  height: 16vh;
+  height: 15vh;
   background-size: cover;
   background-position: center;
   background-image: url("../images/din.jpg");
@@ -9,7 +9,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0;
 }
 
 .footer > h2 {
@@ -25,4 +24,22 @@
   margin: 0 0.6rem;
   height: 1.5rem;
   width: 1.5rem;
+}
+
+.numbar-call {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .footer > h2 {
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .footer {
+    height: 15vh;
+  }
+  .numbar-call {
+    font-size: 0.6rem;
+  }
 }

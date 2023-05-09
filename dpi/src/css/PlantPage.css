@@ -45,10 +45,12 @@
 @media (max-width: 768px) {
   .plant-img {
     width: 30vh;
-    height: 25vh;
+    height: 20vh;
   }
 
   .plant-card {
     height: 60vh;
+    width: 40vh;
+    margin: 1rem 1rem;
   }
 }

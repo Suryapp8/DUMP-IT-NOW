@@ -4,7 +4,7 @@
   background-position: center;
   background-image: url("../images/din.jpg");
   text-shadow: 2px 2px 0 black;
-  color: blanchedalmond;
+  color: greenyellow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
 
 .numbar-call {
   line-height: 0%;
-  color: burlywood;
+  color: white;
 }
 
 .social-logos > a > img {

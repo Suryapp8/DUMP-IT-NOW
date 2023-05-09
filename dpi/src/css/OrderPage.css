@@ -1,8 +1,8 @@
 .orderpage {
   height: 80vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   background-size: cover;
   background-position: center;
@@ -10,8 +10,7 @@
 }
 
 .form {
-  width: 50vh;
-  border: 1px solid black;
+  width: 60vh;
   background-color: #ffffff;
   opacity: 0.9;
   margin-right: 2rem;
@@ -84,5 +83,45 @@
   .schedule {
     font-size: 0.7rem;
     font-weight: bolder;
+  }
+  .orderpage {
+    flex-direction: column-reverse;
+  }
+}
+
+.services-container {
+  width: 50vw;
+}
+
+.services-about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  font-weight: 900;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.services-about > ul {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.services-about > ul > li {
+  padding: 0.8rem 0;
+}
+
+@media (max-width: 768px) {
+  .services-about > ul {
+    font-size: 0.5rem;
+  }
+  .services-about > ul > li {
+    padding: 0.4rem 0;
+    padding-right: 1.5rem;
+  }
+  .services-container {
+    width: 50vh;
   }
 }

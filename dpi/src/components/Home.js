@@ -31,7 +31,9 @@ function Home() {
             Dont's throw your scrap on our lands instead give it to us and get
             plants for your recycling efforts
           </p>
-          <Link to="/plants" ><button className="plants-btn">Get plants</button></Link>
+          <Link to="/plants">
+            <button className="plants-btn">Plants and supplies</button>
+          </Link>
           <div className="all-icons">
             <img src={dustbin} alt="icons" />
             <img src={arrow} alt="icons" />
@@ -57,11 +59,9 @@ function Home() {
             Becoma a part of of 0% plastic emission mission - try to give us
             every piece of plastic which comes to your house, make sure every
             piece of plasticis recycled and give contribution to control
-            <ul>
-              <li>Soil pollution</li>
-              <li>air pollution</li>
-              <li>water pollution</li>
-            </ul>
+            <li style={{ listStyleType: "disc" }}>Soil pollution</li>
+            <li style={{ listStyleType: "disc" }}>air pollution</li>
+            <li style={{ listStyleType: "disc" }}>water pollution</li>
             as per reports, india generates around 3.4 million tonnes of plastic
             waste and barely 30% of its recycled. and to add to it not only
             plastic usage is increasing exponentially the recycling process is

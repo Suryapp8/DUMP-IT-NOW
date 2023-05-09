@@ -8,6 +8,8 @@ import Loading from "./Loading";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import OrderPage from "./OrderPage";
 import PlantPage from "./PlantPage";
+import Valuate from "./Valuate";
+import About from "./About";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -22,9 +24,11 @@ function App() {
           <Navbar />
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="Mission" element={<Mission />} />
+            <Route exact path="mission" element={<Mission />} />
             <Route exact path="bookslot" element={<OrderPage />} />
             <Route exact path="plants" element={<PlantPage />} />
+            <Route exact path="valuate" element={<Valuate />} />
+            <Route exact path="about" element={<About />} />
           </Routes>
           <Footer />
         </BrowserRouter>

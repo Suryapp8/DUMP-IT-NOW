@@ -96,7 +96,7 @@
 .plants-btn {
   text-transform: capitalize;
   font-family: "Bruno Ace SC", cursi;
-  font-size: 2rem;
+  font-size: 1.2rem;
   border-radius: 0.5rem;
 }
 
@@ -183,7 +183,7 @@
 
   .bookslot {
     margin: 0.6rem 1rem;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .plant-about {
     height: 30vh;
@@ -199,7 +199,7 @@
   }
 
   .plants-btn {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 
   .transbox > button:hover {

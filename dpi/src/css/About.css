@@ -1,6 +1,5 @@
-.mission {
+.about-us {
   height: 80vh;
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -9,7 +8,7 @@
   background-image: url("../images/world.jpg");
 }
 
-.vision-about {
+.aboutContainer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -20,19 +19,12 @@
   opacity: 0.9;
 }
 
-.vision-about > ul {
-  font-size: 0.9rem;
-}
-
-.vision-about > ul > li {
-  padding: 0.8rem 0;
+.aboutContainer > li {
+  padding: 1rem 2rem;
 }
 
 @media (max-width: 768px) {
-  .vision-about > ul {
-    font-size: 0.6rem;
-  }
-  .vision-about > ul > li {
-    padding: 0.4rem 0;
+  .aboutContainer > li {
+    font-size: small;
   }
 }

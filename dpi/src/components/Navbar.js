@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Nav.css";
-import logo from "../images/logo.png";
+import logo from "../images/din-logo.png";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -27,16 +27,24 @@ function Navbar() {
                       
               <li>
                 <Link className="links" to="/mission">
-                  Our mission and Vision
+                  Vision
                 </Link>
               </li>
               <li>
-                <Link className="links" to="/mission">
-                  Services
+                <Link className="last-line links" to="/valuate">
+                  How we valuate
                 </Link>
               </li>
-              <li className="links">About us</li>
-              <li className="last-line links">For a lifelong relationship</li>
+              <li className="links">
+                <Link className="links" to="/plants">
+                  Plant and supplies
+                </Link>
+              </li>
+              <li>
+                <Link className="links" to="/about">
+                  About us
+                </Link>
+              </li>
                     
             </div>
                 

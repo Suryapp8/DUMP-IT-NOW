@@ -56,6 +56,35 @@ function OrderPage() {
   };
   return (
     <div className="orderpage">
+
+<div className="services-container">
+      <div className="services-about">
+        <ul>
+          <li style={{ listStyleType: "disc" }}>
+          We serve to create Awareness and let you be the curator of our Mother Earth.
+          </li>
+          <li style={{ listStyleType: "disc" }}>
+          We are providing a system where you exchange the things which you use to throw
+as garbage and becoming a destroyer of Our Eco System with the help of our
+services you will become a curator by sending your waste to the right place where
+we use to get it recycled in to a usable product and in Exchange you will get
+plants and Coupons* from our side as per our valuation system.
+          </li>
+          <li style={{ listStyleType: "disc" }}>
+          We also provide natural plant food 100% organic to keep your plant healthy as
+planting is easy process but the process to get it raised and be healthy requires a
+lot of efforts like raising your own child.
+          </li>
+          <li style={{ listStyleType: "disc" }}>
+          We offer consultancy to our valued customers for setting up Indoor/ outdoor
+Garden and plant care.
+
+And you know what the best part is you can Barter your scrap at your
+suitable time and date, totally at your convenience
+          </li>
+        </ul>
+      </div>
+    </div>
       <form onSubmit={handleSubmit} className="form">
         <div className="name">
           <h3>Name:</h3>

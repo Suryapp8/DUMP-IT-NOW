@@ -3,21 +3,21 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem;
-  color: blanchedalmond;
+  color: white;
   height: 3rem;
   background-size: cover;
   background-position: center;
-  background-image: url("../images/din.jpg");
-  text-shadow: 2px 2px 0 black;
+  background-color: #0c1a1a;
 }
 
 .logo-app {
-  height: 4rem;
-  width: 6.5rem;
+  height: 10rem;
+  width: 10rem;
+  padding: 0;
 }
 
 .links {
-  color: blanchedalmond;
+  color: white;
 }
 
 .logo-app:hover {
@@ -31,7 +31,7 @@
 }
 
 .links:hover {
-  color: skyblue;
+  color: green;
   cursor: pointer;
 }
 
@@ -57,9 +57,7 @@ input[type="checkbox"] {
     left: 0;
     text-align: center;
     padding: 1rem 0;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../images/din.jpg");
+    background-color: black;
     z-index: 3;
   }
 
@@ -81,5 +79,6 @@ input[type="checkbox"] {
 
   .hamburger {
     display: block;
+    color: blanchedalmond;
   }
 }

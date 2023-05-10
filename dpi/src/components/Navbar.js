@@ -31,6 +31,11 @@ function Navbar() {
                 </Link>
               </li>
               <li>
+                <Link className="links" to="/bookslot">
+                  Services
+                </Link>
+              </li>
+              <li>
                 <Link className="last-line links" to="/valuate">
                   How we valuate
                 </Link>

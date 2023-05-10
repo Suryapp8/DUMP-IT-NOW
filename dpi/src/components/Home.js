@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "../css/Home.css";
 import dustbin from "../images/dustbin.png";
 import recycle from "../images/recycle.png";
@@ -7,10 +7,17 @@ import arrow from "../images/arrow.png";
 import redo from "../images/redo.png";
 import earth from "../images/earth.jpg";
 import { Link } from "react-router-dom";
+import Loading from "./Loading";
 
 function Home() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000);
+  }, []);
   return (
+    
     <>
+   
       <div className="home-container">
         <div className="transbox ">
           <h2>Stay Clean Go Green</h2>
@@ -58,7 +65,7 @@ function Home() {
           <p>
             Becoma a part of of 0% plastic emission mission - try to give us
             every piece of plastic which comes to your house, make sure every
-            piece of plasticis recycled and give contribution to control
+            piece of plastic gets recycled and do your part in controlling.
             <li style={{ listStyleType: "disc" }}>Soil pollution</li>
             <li style={{ listStyleType: "disc" }}>air pollution</li>
             <li style={{ listStyleType: "disc" }}>water pollution</li>
@@ -72,7 +79,10 @@ function Home() {
           </p>
         </div>
       </div>
+
+
     </>
+    
   );
 }
 
